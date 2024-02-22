@@ -11,6 +11,10 @@
 		7A0251FD2B7CFA33001E8C10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0251FC2B7CFA33001E8C10 /* ContentView.swift */; };
 		7A0251FF2B7CFA34001E8C10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0251FE2B7CFA34001E8C10 /* Assets.xcassets */; };
 		7A0252022B7CFA34001E8C10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0252012B7CFA34001E8C10 /* Preview Assets.xcassets */; };
+		7A50EBA52B8780C400215A09 /* Homescreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A50EBA42B8780C400215A09 /* Homescreen.swift */; };
+		7A50EBA82B87825900215A09 /* WhatsAppHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A50EBA72B87825900215A09 /* WhatsAppHome.swift */; };
+		7A50EBAB2B87918600215A09 /* ChatPreviewBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A50EBAA2B87918600215A09 /* ChatPreviewBox.swift */; };
+		7A50EBAD2B8791BD00215A09 /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A50EBAC2B8791BD00215A09 /* Chats.swift */; };
 		7A80AC352B8748A700BB81D1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A80AC342B8748A700BB81D1 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +24,10 @@
 		7A0251FC2B7CFA33001E8C10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7A0251FE2B7CFA34001E8C10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A0252012B7CFA34001E8C10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7A50EBA42B8780C400215A09 /* Homescreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homescreen.swift; sourceTree = "<group>"; };
+		7A50EBA72B87825900215A09 /* WhatsAppHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsAppHome.swift; sourceTree = "<group>"; };
+		7A50EBAA2B87918600215A09 /* ChatPreviewBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPreviewBox.swift; sourceTree = "<group>"; };
+		7A50EBAC2B8791BD00215A09 /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
 		7A80AC342B8748A700BB81D1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,10 +78,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7A50EBA62B87821E00215A09 /* WhatsAppView */ = {
+			isa = PBXGroup;
+			children = (
+				7A50EBA92B87912E00215A09 /* Components */,
+				7A80AC342B8748A700BB81D1 /* Settings.swift */,
+				7A50EBA72B87825900215A09 /* WhatsAppHome.swift */,
+				7A50EBAC2B8791BD00215A09 /* Chats.swift */,
+			);
+			path = WhatsAppView;
+			sourceTree = "<group>";
+		};
+		7A50EBA92B87912E00215A09 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7A50EBAA2B87918600215A09 /* ChatPreviewBox.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		7A80AC332B87487E00BB81D1 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				7A80AC342B8748A700BB81D1 /* Settings.swift */,
+				7A50EBA62B87821E00215A09 /* WhatsAppView */,
+				7A50EBA42B8780C400215A09 /* Homescreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -156,6 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A50EBAB2B87918600215A09 /* ChatPreviewBox.swift in Sources */,
+				7A50EBA82B87825900215A09 /* WhatsAppHome.swift in Sources */,
+				7A50EBAD2B8791BD00215A09 /* Chats.swift in Sources */,
+				7A50EBA52B8780C400215A09 /* Homescreen.swift in Sources */,
 				7A80AC352B8748A700BB81D1 /* Settings.swift in Sources */,
 				7A0251FD2B7CFA33001E8C10 /* ContentView.swift in Sources */,
 				7A0251FB2B7CFA33001E8C10 /* swift_playgroundApp.swift in Sources */,

@@ -12,7 +12,7 @@ struct SettingStack: View {
         NavigationView {
             Form {
                 Section() {
-                    NavigationLink(destination: ScreenNavigation()) {
+                    NavigationLink(destination: ScreenNavigationView()) {
                         HStack(spacing: 20) {
                             Image("me")
                                 .resizable()
@@ -27,7 +27,7 @@ struct SettingStack: View {
                         .padding(.top, 10)
                         .padding(.bottom, 10)
                     }
-                    NavigationLink(destination: ScreenNavigation()) {
+                    NavigationLink(destination: ScreenNavigationView()) {
                         HStack(spacing: 20) {
                             Image(systemName: "heart.circle")
                                 .frame(width: 35, height: 35)
@@ -42,7 +42,7 @@ struct SettingStack: View {
                 }
                 
                 Section(header: Text("Pengaturan Umum")) {
-                    NavigationLink(destination: ScreenNavigation()) {
+                    NavigationLink(destination: ScreenNavigationView()) {
                         HStack(spacing: 10) {
                             Image(systemName: "star.fill")
                                 .frame(width: 35, height: 35)
@@ -55,7 +55,7 @@ struct SettingStack: View {
                         .padding(.top, 2)
                     }
                     
-                    NavigationLink(destination: ScreenNavigation()) {
+                    NavigationLink(destination: ScreenNavigationView()) {
                         HStack(spacing: 10) {
                             Image(systemName: "tv")
                                 .frame(width: 35, height: 35)
@@ -70,7 +70,7 @@ struct SettingStack: View {
                 }
                 
                 Section(header: Text("Pengaturan Akun")) {
-                    NavigationLink(destination: ScreenNavigation()) {
+                    NavigationLink(destination: ScreenNavigationView()) {
                         HStack(spacing: 10) {
                             Image(systemName: "person")
                                 .frame(width: 35, height: 35)
@@ -83,7 +83,7 @@ struct SettingStack: View {
                         .padding(.top, 2)
                     }
                     
-                    NavigationLink(destination: ScreenNavigation()) {
+                    NavigationLink(destination: ScreenNavigationView()) {
                         HStack(spacing: 10) {
                             Image(systemName: "phone.circle")
                                 .frame(width: 35, height: 35)
@@ -95,15 +95,28 @@ struct SettingStack: View {
                         }
                         .padding(.bottom, 2)
                     }
+                    
+                    NavigationLink(destination: Homescreen().navigationBarBackButtonHidden(true)) {
+                        HStack(spacing: 10) {
+                            Image(systemName: "square.and.arrow.up.fill")
+                                .frame(width: 35, height: 35)
+                                .background(Color.red)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(10)
+                            
+                            Text("Back to main menu")
+                        }
+                        .padding(.bottom, 2)
+                    }
                 }
             }.navigationTitle("Settings")
         }
     }
 }
 
-struct ScreenNavigation: View {
+struct ScreenNavigationView: View {
     var body: some View {
-        Text("Navigation")
+        Text("Setting Navigation View")
     }
 }
 
